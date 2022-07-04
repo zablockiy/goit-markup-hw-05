@@ -23,7 +23,7 @@
     />
   </head>
 
-  <body>
+  <body data-body>
     <!-- хедер -->
     <header class="header">
       <div class="container header-container">
@@ -32,8 +32,9 @@
         </a>
         <nav class="header-nav">
           <ul class="header-list list">
-            <li class="header-list-item">
+            <li class="header-list-item ">
               <a class="header-link link current" href="./index.html">Студия</a>
+             
             </li>
             <li class="header-list-item">
               <a class="header-link link" href="./portfolio.html">Портфолио</a>
@@ -74,7 +75,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button-hero" type="button">Заказать услугу</button>
+          <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Наши преимущества-->
@@ -144,6 +145,9 @@
                 width="370"
                 alt="Кодируем, верстаем сайты"
               />
+              <div class="label">
+                <p class="label-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item-example">
               <img
@@ -151,6 +155,9 @@
                 width="370"
                 alt="Разработка мобильных приложений"
               />
+              <div class="label">
+                <p class="label-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="item-example">
               <img
@@ -158,6 +165,9 @@
                 width="370"
                 alt="Палитра на планшете"
               />
+              <div class="label">
+                <p class="label-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -461,10 +471,12 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <!-- модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button">
-          <svg>
+        <p class="modal-text">Юля, вдалого тобі дня)</p>
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="close-btn-pic">
             <use href="./images/icons.svg#btn-close"></use>
           </svg>
         </button>
